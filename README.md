@@ -15,6 +15,8 @@ If you need to wrap a functionality of a library and load it only inside a compo
 Example:
 
 ``` html
+<link rel="import" href="[your_bower_folder]/polymer-lib-loader/polymer-lib-loader.html">
+
 <lib-loader
 lib="https://cdnjs.cloudflare.com/ajax/libs/[lib]/[version]/[lib].js"
 lib-unique-id="uniqueIdHere"
