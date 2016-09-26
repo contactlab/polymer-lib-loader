@@ -33,9 +33,9 @@ class libLoader {
   }
 
   // on ready try to insert the lib on the page
-  ready () {
+  attached () {
     if (!this.lib || !this.libUniqueId) {
-      console.error('Library or unique id not specified')
+      console.error('<lib-loader> ERROR: Library or unique id not specified.')
       return false
     }
 
@@ -51,7 +51,6 @@ class libLoader {
 
   /** Remove lib from the dom */
   removeLib () {
-    console.log('removing')
     let lib = document.querySelector('#' + this.libUniqueId)
     lib ? lib.remove() : null
   }
@@ -63,6 +62,9 @@ class libLoader {
   _insertLib (link, type) {
     // Check for existent lib
     if (document.querySelector('#' + type)) {
+      document.querySelector('lib-loader').addEventListener('lib-loaded', (evt) => {
+        this._onLoadLib(evt, type)
+      })
       return false
     }
     let src = document.createElement('script')
