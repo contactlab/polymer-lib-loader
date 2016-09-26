@@ -22,13 +22,15 @@ var libLoader = function () {
 
       // Define the properties object in beforeRegister.
       this.properties = {
-        /** Ace istance **/
+        /** Link of the library */
         lib: {
           type: String
         },
+        /** <script id="" */
         libUniqueId: {
           type: String
         },
+        /** True when the lib is ready */
         libReady: {
           type: Boolean,
           value: false,
@@ -37,15 +39,15 @@ var libLoader = function () {
       };
     }
 
-    // onReady insert Ace.js library from CDN
+    // on ready try to insert the lib on the page
 
   }, {
-    key: 'ready',
-    value: function ready() {
+    key: 'attached',
+    value: function attached() {
       var _this = this;
 
       if (!this.lib || !this.libUniqueId) {
-        console.error('Library or unique id not specified');
+        console.error('<lib-loader> ERROR: Library or unique id not specified.');
         return false;
       }
 
@@ -65,7 +67,6 @@ var libLoader = function () {
   }, {
     key: 'removeLib',
     value: function removeLib() {
-      console.log('removing');
       var lib = document.querySelector('#' + this.libUniqueId);
       lib ? lib.remove() : null;
     }
@@ -82,6 +83,9 @@ var libLoader = function () {
 
       // Check for existent lib
       if (document.querySelector('#' + type)) {
+        document.querySelector('lib-loader').addEventListener('lib-loaded', function (evt) {
+          _this2._onLoadLib(evt, type);
+        });
         return false;
       }
       var src = document.createElement('script');
