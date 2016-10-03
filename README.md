@@ -1,10 +1,10 @@
 # `<lib-loader>` Polymer (ES6)
 
 [![Build status](https://travis-ci.org/LasaleFamine/polymer-lib-loader.svg?branch=master)](https://travis-ci.org/LasaleFamine/polymer-lib-loader)
-[![Bower](https://img.shields.io/bower/v/polymer-lib-loader.svg?maxAge=2592000)](https://github.com/LasaleFamine/polymer-lib-loader)
+[![Bower version](https://badge.fury.io/bo/polymer-lib-loader.svg)](https://badge.fury.io/bo/polymer-lib-loader)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![David](https://img.shields.io/david/dev/lasalefamine/polymer-lib-loader.svg?maxAge=2592000?style=plastic)](https://github.com/LasaleFamine/polymer-lib-loader)
-
+[![Dependency Status](https://gemnasium.com/badges/github.com/LasaleFamine/polymer-lib-loader.svg)](https://gemnasium.com/github.com/LasaleFamine/polymer-lib-loader)
+ 
 
 > Library loader WebComponent for external (or internal) library. Written in [Polymer 1.0](https://www.polymer-project.org/1.0/) in ES6 syntax.
 
