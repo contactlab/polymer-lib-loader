@@ -1,8 +1,8 @@
 {
   "name": "polymer-lib-loader",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Polymer (ES6) external (or internal) library loader component",
-  "main": "lib-loader.js",
+  "main": "lib-loader.es6.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LasaleFamine/polymer-lib-loader.git"

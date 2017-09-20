@@ -1,5 +1,7 @@
 'use strict'
 
+import './lib-loader.html';
+
 const Polymer = window.Polymer
 const CustomEvent = window.CustomEvent
 
