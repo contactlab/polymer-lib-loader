@@ -1,4 +1,6 @@
-# `<lib-loader>` Polymer (ES6) - :warning: Deprecated
+# :warning: This project is no longer mantained
+
+# `<lib-loader>` Polymer (ES6)
 
 [![Build status](https://travis-ci.org/LasaleFamine/polymer-lib-loader.svg?branch=master)](https://travis-ci.org/LasaleFamine/polymer-lib-loader)
 [![Bower version](https://badge.fury.io/bo/polymer-lib-loader.svg)](https://badge.fury.io/bo/polymer-lib-loader)
